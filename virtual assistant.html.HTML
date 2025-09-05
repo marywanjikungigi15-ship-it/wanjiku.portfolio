@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mary Wanjiku | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f3e8ff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #6b21a8;
+      padding: 20px;
+    }
+
+    nav h1 {
+      text-align: center;
+      color: white;
+      font-size: 36px;
+      font-weight: 600;
+    }
+
+    nav ul {
+      list-style: none;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #facc15;
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      transition: all 0.3s ease;
+      border-radius: 6px;
+    }
+
+    nav ul li a:hover {
+      background-color: #facc15;
+      color: #6b21a8;
+    }
+
+    section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 1s ease-in-out;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #home {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 20px 0;
+      border: 4px solid #6b21a8;
+    }
+
+    #home h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #6b21a8;
+    }
+
+    #about, #projects, #skills, #contact {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    #about {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      color: #444;
+    }
+
+    #projects {
+      background-color: #fdf4ff;
+      border-radius: 12px;
+    }
+
+    .project {
+      background: #fff;
+      color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    #skills {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    #skills h3 {
+      color: #6b21a8;
+      margin-top: 20px;
+    }
+
+    #contact {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    #contact a {
+      color: #6b21a8;
+      font-weight: 600;
+    }
+
+    /* Back to Top Button */
+    #backToTop {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      background-color: #facc15;
+      color: #6b21a8;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      z-index: 999;
+    }
+
+    #backToTop:hover {
+      background-color: #eab308;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <h1>Mary Wanjiku</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2 id="typing-text">Hello, I'm Mary</h2>
+    <img src="MARY.JPEG.jpg" alt="Mary Wanjiku smiling, Virtual Assistant" class="profile-photo" />
+    <p>A passionate Virtual Assistant.</p>
+    <p>I love showing up with patience and focus, which helps me stay organized and support clients with confidence and care.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m Mary. I’m a Virtual Assistant who loves helping clients stay organized and stress-free. 
+    I handle tasks like calendar management, research, email support, and travel planning with focus 
+    and attention to detail. My goal is to make your day easier by managing the small things so you 
+    can focus on the big things.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Calendar Management</h3>
+      <p>Organized a client’s schedule using Google Calendar, set reminders, and ensured no double bookings. This helped the client save time and stay focused on priority tasks.</p>
+      <p><strong>Tools:</strong> Google Calendar, Gmail</p>
+    </div>
+
+    <div class="project">
+      <h3>Travel Planning</h3>
+      <p>Planned a detailed travel itinerary including flights, accommodation, and activities. Ensured smooth coordination and stress-free travel experience.</p>
+      <p><strong>Tools:</strong> Google Docs, Google Sheets</p>
+    </div>
+
+    <div class="project">
+      <h3>Market Research</h3>
+      <p>Compiled a research report on competitors in the tech industry, presented findings in a clear and easy-to-read format to help decision-making.</p>
+      <p><strong>Tools:</strong> Google Sheets, Canva</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <h3>Technical Skills</h3>
+    <ul>
+      <li>Google Workspace (Docs, Sheets, Calendar, Gmail)</li>
+      <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+      <li>Email and Calendar Management</li>
+      <li>Online Research</li>
+      <li>Canva (Basic design)</li>
+      <li>Trello / Asana (Task management)</li>
+    </ul>
+
+    <h3>Professional Skills</h3>
+    <ul>
+      <li>Strong Communication</li>
+      <li>Time Management</li>
+      <li>Organization</li>
+      <li>Attention to Detail</li>
+      <li>Problem-Solving</li>
+      <li>Adaptability</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>You can reach me via:</p>
+    <ul>
+      <li>Email: <a href="mailto:marywanjikungigi15@gmail.com">marywanjikungigi15@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/mary-wanjiku-b7306a357" target="_blank">Visit My LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop">Back to Top</button>
+
+  <!-- JavaScript -->
+  <script>
+    console.log("Welcome to Mary Wanjiku’s Portfolio 💜");
+
+    // Fade-in sections on scroll
+    const sections = document.querySelectorAll('section');
+    window.addEventListener('scroll', () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < triggerBottom) {
+          section.classList.add('visible');
+        }
+      });
+    });
+
+    // Back to Top Button
+    const backToTopBtn = document.getElementById('backToTop');
+    window.onscroll = () => {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    };
+
+    backToTopBtn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    // Typing Animation
+    const textElement = document.getElementById('typing-text');
+    const originalText = textElement.textContent;
+    let index = 0;
+    textElement.textContent = '';
+    function typeText() {
+      if (index < originalText.length) {
+        textElement.textContent += originalText.charAt(index);
+        index++;
+        setTimeout(typeText, 100);
+      }
+    }
+    typeText();
+  </script>
+</body>
+</html>
